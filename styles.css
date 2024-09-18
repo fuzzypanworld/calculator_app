@@ -4,12 +4,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #6a0dad, #a45ee5); /* Purple gradient */
     font-family: Arial, sans-serif;
 }
 
 .calculator {
-    background-color: #333;
+    background-color: #444; /* Darker background for contrast */
+    border: 1px solid #888; /* Subtle border */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -22,10 +23,11 @@ body {
     text-align: right;
     margin-bottom: 10px;
     padding: 5px;
-    background-color: #444;
-    color: white;
+    background-color: #222; /* Darker display */
+    color: #0f0; /* Green text for display */
     border: none;
     border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 .buttons {
@@ -43,16 +45,32 @@ button {
     cursor: pointer;
     background-color: #555;
     color: white;
+    transition: background-color 0.3s, transform 0.1s; /* Smooth transition */
 }
 
 button:hover {
-    background-color: #666;
+    background-color: #777; /* Lighter on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .operator {
-    background-color: #ff9500;
+    background-color: #ff9500; /* Orange for operators */
 }
 
 .operator:hover {
-    background-color: #ffaa33;
+    background-color: #ffaa33; /* Lighter orange on hover */
+}
+
+footer {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above the footer */
+    color: black; /* Black text color */
+    font-size: 16px; /* Font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.footer-text {
+    font-weight: bold; /* Make the text bold */
+    font-size: 18px; /* Increase font size for emphasis */
+    margin: 0; /* Remove default margin */
 }
